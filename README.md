@@ -34,4 +34,3 @@ The full **STM32CubeU0** MCU package is available [here](https://github.com/STMi
 ## Troubleshooting
 
 Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
-

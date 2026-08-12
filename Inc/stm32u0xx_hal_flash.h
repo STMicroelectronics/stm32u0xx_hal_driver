@@ -753,8 +753,8 @@ HAL_StatusTypeDef  FLASH_WaitForLastOperation(uint32_t Timeout);
 #define IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS(__ADDRESS__) ((__ADDRESS__) >= (FLASH_BASE))\
   && ((__ADDRESS__) <= (FLASH_BASE + FLASH_SIZE ))
 
-#define IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)      (((__ADDRESS__) >= 0x1FFF7000U)\
-                                                        && ((__ADDRESS__) < 0x1FFF7400U ))
+#define IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)      (((__ADDRESS__) >= 0x1FFF6800U)\
+                                                        && ((__ADDRESS__) < 0x1FFF6C00U ))
 
 #define IS_FLASH_PROGRAM_ADDRESS(__ADDRESS__)          ((IS_FLASH_PROGRAM_MAIN_MEM_ADDRESS(__ADDRESS__))\
                                                         || (IS_FLASH_PROGRAM_OTP_ADDRESS(__ADDRESS__)))
